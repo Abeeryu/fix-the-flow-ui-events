@@ -169,3 +169,24 @@ button.addEventListener("click", function() {
 
 
 
+let object = document.querySelector('a:nth-of-type(9)')
+
+object.addEventListener("keydown", user);
+
+function user (m) {
+  if (m.key === 'm') {
+    object.classList.toggle('objecter')
+  }
+}
+
+
+
+
+
+
+
+let oneclick = document.querySelector('a:nth-of-type(10)');
+
+oneclick.addEventListener("click", (event) => {
+  button.textContent = `Click count: ${event.detail}`;
+});
